@@ -1,0 +1,33 @@
+<div class="juegos">
+  <div class="contenido">
+    <h3><i class="gp-element-icon fa fa-star" style="color: #fff;background-color: #dd9933;text-align: center;"></i>
+      DESTACADOS</h3>
+    <div class="row destacados">
+
+      <div *ngFor="let post of arregloPost; let i = index" class="col-sm-6">
+        <div *ngIf="i<2">
+          <app-post-imagen [url]="post.img"
+                           [descripcion]="post.descr"
+                           [ancho]=800>
+          </app-post-imagen>
+        </div>
+      </div>
+      <h3><i class="far fa-calendar-check" style="color: #fff;background-color: #8224e3;"></i>
+        ULTIMAS PUBLICACIONES</h3>
+      <div class="row ultimas">
+
+        <div *ngFor="let post of arregloPost; let i = index" class="col-sm-4">
+          <app-post-imagen [url]="post.img"
+                           [descripcion]="post.descr"
+                           [ancho]=550>
+          </app-post-imagen>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buscarYPublicidad">
+    <form class="d-flex" style="margin: 20px 10px">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+</div>

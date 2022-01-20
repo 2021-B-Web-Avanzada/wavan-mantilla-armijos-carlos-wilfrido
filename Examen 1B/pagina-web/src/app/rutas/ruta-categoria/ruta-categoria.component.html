@@ -1,0 +1,23 @@
+<div style="background: black;
+ font-size: 35px;
+ color: white;
+ font-family: Arial,sans-serif;
+ letter-spacing: -1.5px;
+padding: 10px;">ACCIÓN</div>
+<div class="categoria">
+  <div class="contenido">
+    <div class="row juegos">
+        <div *ngFor="let post of arregloPost; let i = index" class="col-sm-4">
+          <app-post-imagen [url]="post.img"
+                           [descripcion]="post.descr"
+                           [ancho]=550>
+          </app-post-imagen>
+        </div>
+    </div>
+  </div>
+  <div class="buscarYPublicidad">
+    <form class="d-flex" style="margin: 20px 10px">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+</div>

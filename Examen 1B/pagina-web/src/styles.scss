@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+
+.contenedor {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  width: 1260px;
+}
+.navbar {
+  padding: 0 3%;
+  height: 90px;
+}
+
+.navbar-collapse {
+  font-size: 16px;
+  font-family: "Open Sans",Arial, Helvetica, sans-serif;
+  letter-spacing: -1.5px;
+  line-height: 1;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; // remove the gap so it doesn't close
+  color: #fed766;
+}
+.dropdown-menu {
+  list-style: none;
+  max-width: 250px;
+  padding: 10px 20px;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 16px;
+  font-family: open sans,sans-serif;
+  background: #55acee;
+  word-wrap: break-word;
+  color: white;
+}
+
+.contenido {
+  width: 66%;
+  height: 1200px;
+  float: left;
+  padding: 3%;
+}
+.buscarYPublicidad {
+  width: 33.995%;
+  height: 1200px;
+  float: right;
+}
+h3 {
+  font-family: "Unica One",Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  line-height: 30px;
+  letter-spacing: -1.5px;
+  font-weight: 400;
+  font-style: normal;
+  color: #3e6a91;
+  opacity: 1;
+}
+
+//FOOTER
+footer {
+  margin: 0 3%;
+}
+.footerContainer {
+  width: 100%;
+  position: relative;
+}
+.copyright {
+  float: left;
+  width: 29%;
+  height: 190px;
+  background: black;
+  border-right: 10px solid #fed766;
+  text-align: right;
+  padding: 2%;
+}
+
+.social {
+  float: right;
+  width: 71%;
+  height: 190px;
+  background: #fe4a49;
+}
+
+.media {
+  float: left;
+  padding: 4%;
+}

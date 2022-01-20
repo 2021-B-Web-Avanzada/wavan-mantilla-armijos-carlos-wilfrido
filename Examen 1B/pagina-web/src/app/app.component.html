@@ -1,0 +1,106 @@
+<div class="contenedor">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #fe4a49">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="https://pivigames.blog/wp-content/uploads/2018/05/logo-pivigames.png" alt="" width="300" height="63">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías I
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['/categoria']">Juegos Android</a></li>
+            <li><a class="dropdown-item" href="#">2D</a></li>
+            <li><a class="dropdown-item" href="#">32 Bits</a></li>
+            <li><a class="dropdown-item" href="#">3DS Rooms</a></li>
+            <li><a class="dropdown-item" href="#">Acción</a></li>
+            <li><a class="dropdown-item" href="#">Anime</a></li>
+            <li><a class="dropdown-item" href="#">Carreras</a></li>
+            <li><a class="dropdown-item" href="#">Construcción</a></li>
+            <li><a class="dropdown-item" href="#">Deportes</a></li>
+            <li><a class="dropdown-item" href="#">Estrategia</a></li>
+            <li><a class="dropdown-item" href="#">Shooter</a></li>
+            <li><a class="dropdown-item" href="#">Guerra</a></li>
+            <li><a class="dropdown-item" href="#">Lucha</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categorías II
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Multiplayer Online</a></li>
+            <li><a class="dropdown-item" href="#">Mundo Abierto</a></li>
+            <li><a class="dropdown-item" href="#">Pantalla Dividida</a></li>
+            <li><a class="dropdown-item" href="#">Pixelados</a></li>
+            <li><a class="dropdown-item" href="#">PS2 Rooms</a></li>
+            <li><a class="dropdown-item" href="#">PSP Rooms</a></li>
+            <li><a class="dropdown-item" href="#">Rol</a></li>
+            <li><a class="dropdown-item" href="#">Simulación</a></li>
+            <li><a class="dropdown-item" href="#">Supervivencia</a></li>
+            <li><a class="dropdown-item" href="#">Terror</a></li>
+            <li><a class="dropdown-item" href="#">Wii Rooms</a></li>
+            <li><a class="dropdown-item" href="#">WiiU Rooms</a></li>
+            <li><a class="dropdown-item" href="#">Zombies</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Requisitos</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Programas para PC
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Emuladores</a></li>
+            <li><a class="dropdown-item" href="#">Software</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Ayuda
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">¿CÓMO DESCARGAR?</a></li>
+            <li><a class="dropdown-item" href="#">¿CÓMO INSTALAR</a></li>
+            <li><a class="dropdown-item" href="#">PROGRAMAS NECESARIOS PARA JUGAR EN PC</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">DMCA</a>
+        </li>
+
+        <li class="nav-item">
+
+        </li>
+      </ul>
+      <span class="input-group-text border-0" id="search-addon" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        <i class="fas fa-search"></i>
+      </span>
+    </div>
+
+  </div>
+
+</nav>
+  <div class="collapse" id="collapseExample">
+    <form class="d-flex" style="border: #55acee Solid 15px">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+  </div>
+  <!--CONTENIDO-->
+  <router-outlet></router-outlet>
+
+<app-footer></app-footer>
+
+
