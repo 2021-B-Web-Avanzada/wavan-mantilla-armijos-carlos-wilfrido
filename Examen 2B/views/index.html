@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Battle City</title>
+    <link rel='stylesheet' type='text/css' href='/dist/main.bundle.css' />
+  </head>
+
+  <body oncontextmenu='return false;'>
+    <div id='name-prompt-overlay'>
+      <div id='name-prompt-container'>
+        <form id='name-form'>
+          <input type='text' id='name-input' placeholder='Nickname'
+            autocomplete='off' />
+          <button id='name-submit'>
+            Jugar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id='container'>
+      <table>
+        <tr>
+          <th colspan='3'>
+            <h1>Battle City - Examen IIB Websockets</h1>
+          </th>
+        </tr>
+        <tr>
+          <td id='leaderboard-container'>
+            <h3>Clasificación:</h3>
+            <ul id='leaderboard'></ul>
+          </td>
+          <td id='canvas-container'>
+            <canvas id='canvas'></canvas>
+          </td>
+          <td id='chat-container'>
+            <ul id='chat-display'>
+            </ul>
+            <input id='chat-input' type='text'
+              placeholder='Precione Enter para enviar' name='chat' />
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script src='/dist/client.bundle.js'></script>
+  </body>
+</html>
